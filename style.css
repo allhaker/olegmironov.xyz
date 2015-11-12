@@ -1,0 +1,109 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+h1 {
+  font-size: 60pt;
+}
+h2 {
+  font-size: 30pt;
+}
+footer {
+  text-align: center;
+}
+.screen {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  background-size: cover !important;
+}
+.under-title {
+  font-size: 12pt;
+}
+.img-block {
+  margin: 30px;
+  display: inline-block;
+  text-align: center;
+}
+.one {
+  background: url("img/container-1.png");
+}
+#use .img-block {
+  width: 128px;
+}
+.two {
+  background: url("img/container-2.png");
+}
+#passion .img-block {
+  width: 250px;
+}
+.block .left {
+  float: left;
+}
+.block {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.block .left, .block .right, .block .center {
+  align-self: center;
+  display: inline-block;
+  text-align: left;
+}
+
+#contacts .center {
+  margin-left: 20px;
+  padding-top: 15px;
+}
+
+@media (max-width: 1200px)  {
+  .block {
+    display: block;
+    text-align: center;
+  }
+  .block .left, .block .right, .block .center {
+    text-align: center;
+    display: block;
+  }
+}
+
+@media (max-width: 600px)  {
+  .img-block {
+    margin: 20px;
+  }
+  #use .img-block {
+    width: 55px;
+    height: 55px;
+  }
+  #use .img-block > img{
+    width: 55px;
+  }
+  #passion .img-block {
+    width: 100px;
+    height: 100px;
+  }
+  #passion .img-block > img{
+    width: 100px;
+  }
+  h1 {
+    font-size: 40pt;
+  }
+  h2 {
+    font-size: 20pt;
+  }
+  #title-img {
+    width: 300px;
+  }
+  #contacts div {
+    display: block;
+  }
+  #contacts .center {
+    margin-left: inherit;
+    padding-top: inherit;
+}
+  .left {
+    width: 100%;
+  }
+}
